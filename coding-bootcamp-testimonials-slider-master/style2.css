@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Karla:ital,wght@0,400;1,200&family=Poppins:ital,wght@0,300;0,400;1,500;1,600&family=Roboto+Slab:wght@300&display=swap');
+:root{
+    /*Colors*/
+    --Dark-Blue: hsl(240, 38%, 20%);
+    --Grayish-Blue: hsl(240, 18%, 77%);
+    /*Fonts*/
+    --font-family: 'Inter', sans-serif;
+    --font-size: 14px;
+    --font-weight-reg: 300;
+    --font-weight-mid:500;
+    --font-weight-bold: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.backgrounds{
+    display: grid;
+    grid-template-columns: repeat(2,550px);
+    grid-template-rows: 470px;  
+    
+}
+.background1{
+    position: relative;
+    padding: 150px;
+}
+.background2{
+    position: relative;
+    height: 90vh;
+    width: 40vw;
+    margin: 50px;
+}
+.background3{
+    height: 100px;
+}
+
+#tanya{
+    position: absolute;
+    top: 90px;
+    left: 650px;
+    height: 75vh;
+    filter: drop-shadow(0 0 0.75rem var(--Grayish-Blue));
+    
+}
+p{
+    position: absolute;
+    top: 180px;
+    width: 670px;
+    margin: 30px;
+    padding-left: 30px;
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: var(--font-weight-mid);
+    color: var(--Dark-Blue);
+    
+}
+h3{
+    position: absolute;
+    top: 420px;
+    margin: 30px;
+    padding-left: 30px;
+    font-family: "Inter";
+    font-weight: var(--font-weight-bold);
+
+}
+#subtext{
+    color: var(--Grayish-Blue);
+}
+.buttons{
+    position: absolute;
+    top: 470px;
+    left: 700px;
+    border: 1px solid var(--Grayish-Blue);
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;   
+    filter: drop-shadow(0 0 0.75rem var(--Grayish-Blue)); 
+}
+button{
+    border: 1px solid white;
+    background-color: white;
+    cursor: pointer;
+}
+#Pbtn{
+    margin-right: 20px;
+}
+
+
+
+@media  screen and (max-width:600px){
+    
+    .backgrounds{
+        display: grid;
+        grid-template-columns: 100px;
+        grid-template-rows: repeat(3,300px);  
+        
+    }
+    .background2{
+        order: 1;
+        position: relative;
+        height: 50vh;
+        width: 70vw;
+        left: 40px;
+        margin-top: 20px;
+    }
+    #tanya{
+        position: absolute;
+        top: 50px;
+        left: 70px;
+        height: 40vh;
+        filter: drop-shadow(0 0 0.75rem var(--Grayish-Blue));
+    }
+    .background1{
+        position: relative;
+        padding: 70px 50px 30px 150px;
+        order: 2;
+        height: 23vh;
+    }
+    .background3{
+        order: 3;
+        height: 100px;
+    }
+    p{
+        position: absolute;
+        top: 395px;
+        width: 280px;
+        margin: 10px 50px;
+        padding-left: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+    h3{
+        position: absolute;
+        top: 550px;
+        margin: 10px 100px;
+        padding-left: 30px;
+        text-align: center;
+        font-size: 17px;
+    }
+    span::before{
+        content: "\a";
+        white-space: pre;
+    }
+    .buttons{
+        position: absolute;
+        top: 300px;
+        left: 150px;
+        padding: 10px 20px 10px 20px;   
+    }
+    
+    #Pbtn{
+        margin-right: 20px;
+    }
+    
+    
+}
